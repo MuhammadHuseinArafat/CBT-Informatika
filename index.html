@@ -181,7 +181,7 @@
               id="timer"
               class="text-lg font-bold bg-red-600 px-4 py-2 rounded-lg text-center"
             >
-              45:00
+              60:00
             </div>
           </div>
           <div id="nav-panel" class="grid grid-cols-5 gap-3 mb-6"></div>
@@ -606,7 +606,7 @@
 
       let currentQuestionIndex = 0,
         timer,
-        timeLeft = 2700;
+        timeLeft = 3600;
       let userAnswers = {},
         shuffledQuestions = [],
         questionStatuses = [];
@@ -632,7 +632,7 @@
         quizScreen.classList.remove("hidden");
 
         currentQuestionIndex = 0;
-        timeLeft = 2700; // 45 mins
+        timeLeft = 3600; // 45 mins
         userAnswers = {};
 
         const mcQuestions = questions.filter((q) => q.type === "mc");
