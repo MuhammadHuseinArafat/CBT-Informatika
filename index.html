@@ -885,6 +885,7 @@
 
       // --- EVENT LISTENERS ---
       startBtn.addEventListener("click", startQuiz);
+      markBtn.addEventListener("click", toggleMarkForReview);
       prevBtn.addEventListener("click", () => handlePrevNext(-1));
       nextBtn.addEventListener("click", () => {
         if (currentQuestionIndex === shuffledQuestions.length - 1) {
